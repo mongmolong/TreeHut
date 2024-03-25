@@ -1656,7 +1656,16 @@ span {
 }
 
 @media all and (min-width: 701px) and (max-width: 828px) {
-
+  #topBtn {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(238, 238, 238, 0.767);
+  }
+  #topBtn>img {
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
   /* butter */
   #section .butterItems {
     width: 800px;
@@ -1709,6 +1718,16 @@ span {
 
 
 @media all and (max-width:767px) {
+    #topBtn {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(238, 238, 238, 0.767);
+  }
+  #topBtn>img {
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
 #section .media{
   height: 100%;
 }
