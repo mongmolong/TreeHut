@@ -15,7 +15,7 @@ $(window).on('resize', function(){
  $("#topBtn").fadeOut();
 
     $(window).scroll(function() {
-        checkScrollPosition();
+        checkScrollPosition(); 
     });
 
     $(window).on('beforeunload', function() {
@@ -51,7 +51,7 @@ function restoreHeaderState() {
     var scrollTop = localStorage.getItem('headerScrollTop');
     if (scrollTop) {
         $(window).scrollTop(scrollTop);
-        checkScrollPosition(); 
+        checkScrollPosition();
     }
 }
 
@@ -71,33 +71,6 @@ function restoreHeaderState() {
     });
 
 
-
-  //----------------------------------------------------------- move
-  $(".move").each(function () {
-    $(this).on("mousewheel DOMMouseScroll", function (e) {
-      e.preventDefault();
-      var delta = 0;
-      if (event.wheelDelta) {
-        delta = event.wheelDelta;
-      }
-      var moveTop = null;
-      if (delta < 0) {
-        if ($(this).next() != undefined) {
-          moveTop = $(this).next().offset().top;
-        }
-      } else {
-        if ($(this).prev() != undefined) {
-          moveTop = $(this).prev().offset().top;
-        }
-      }
-      $("html,body").stop().animate(
-        {
-          scrollTop: moveTop + "px",
-        },
-        500
-      );
-    });
-  });
 
   // ------------------------------------------------------------scrub
 
@@ -205,7 +178,7 @@ function scrubControl(){
     $(".washSmallPhotos>li").eq(washBig_list).stop().fadeIn(700);
   };
 
-  // ------------------------------------------------------------wash
+  // ------------------------------------------------------------lip
   let lip_list = 0;
   let lip_count = $(".lip_lists>li").length;
   let lip_hi = $(".lip_lists>li").height();
@@ -228,5 +201,3 @@ function scrubControl(){
       });
   }, 4000);
 });
-
-
