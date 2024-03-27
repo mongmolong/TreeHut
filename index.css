@@ -1287,6 +1287,7 @@ span {
 
 
 @media all and (min-width: 1201px) and (max-width: 1850px) {
+
   /* butter */
   #section .butter .butterLeft .butterText>h1>span {
     color: #f3f3f3;
@@ -1300,6 +1301,7 @@ span {
   }
 
 }
+
 @media all and (min-width: 1201px) and (max-width: 1520px) {
   #section .butterItems {
     top: 170px;
@@ -1628,15 +1630,6 @@ span {
 
 
 @media all and (max-width: 829px) {
-  #section .info .textCircle {
-    top: 3%;
-  }
-
-  #section .info .textCircle>img {
-    width: 100%;
-  }
-
-  #section .info .textCircle,
   #section .info #bottomFooter .infoPerson {
     left: 50%;
     transform: translateX(-50%);
@@ -1648,10 +1641,11 @@ span {
 }
 
 @media all and (min-width: 701px) and (max-width: 828px) {
+
   #header .bottom {
     background-color: rgba(255, 255, 255, 0.192);
   }
-  
+
   #topBtn {
     width: 20px;
     height: 20px;
@@ -1711,11 +1705,25 @@ span {
   #section .info .infoTex>ul {
     display: none;
   }
+
+
+  #section .info .textCircle {
+    top: 0%;
+    left: 45%;
+    right: 0;
+    transform: translateX(-50%);
+  }
+
+  #section .info .textCircle>img {
+    /* width:100%; */
+    width:500px;
+  }
+
 }
 
 
 @media all and (max-width:767px) {
- 
+
   #topBtn {
     width: 20px;
     height: 20px;
@@ -1920,23 +1928,19 @@ span {
     }
   }
 
-
-
   #section .butter {
     height: 1050px;
-
   }
 
   /* footer */
 
-
   #section .info {
-    height: 700px;
+    height: 780px;
     margin-top: 50px;
   }
 
   #section .info #bottomFooter .infoPerson {
-    top: 2%;
+    top: 0%;
   }
 
   #section .info #footer {
@@ -1979,6 +1983,7 @@ span {
     min-height: 500px;
     padding-bottom: 0;
   }
+
   #section .media video {
     height: 500px;
   }
@@ -2030,5 +2035,20 @@ span {
     display: none;
   }
 
+
+  #section .info .textCircle {
+    /* top: 3%; */
+    top: 0;
+    width: 480px;
+  }
+
+  #section .info .textCircle>img {
+    width: 100%;
+  }
+
+  #section .info .textCircle {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
 }
