@@ -1442,9 +1442,7 @@ span {
   }
 
   /* info */
-  #section .info {
-    height: 800px;
-  }
+  
 
   #section .info .infoText>p,
   #section .info .infoText>p.tabletText {
@@ -1453,8 +1451,8 @@ span {
 
 
   /* bottomFooter */
-  #section .info #bottomFooter .infoPerson {
-    top: 4%;
+  #section .info {
+    height: 900px;
   }
 
   #section .info #footer {
@@ -1484,8 +1482,6 @@ span {
   #section .info #footer .footerText .footerLeft .footerTablet {
     display: none;
   }
-
-
 
 }
 
@@ -1551,21 +1547,18 @@ span {
 
 
   #section .info .textCircle {
-    top: 2%;
+    top: 70px;
     right: 0%;
     left: 50%;
+    width: 500px;
   }
 
-  #section .info .textCircle>img {
-    width: 100%;
-  }
 
   #section .info .textCircle,
   #section .info #bottomFooter .infoPerson {
     left: 50%;
     transform: translateX(-50%);
   }
-
 
   #section .info .infoText {
     display: none;
@@ -1574,7 +1567,6 @@ span {
 }
 
 @media all and (max-width:1065px) {
-
   /* wash */
   #section .wash .washCenter .washItems li .washSubText .washBtn {
     top: -300px;
@@ -1621,19 +1613,18 @@ span {
     display: none;
   }
 
-
   #section .info #footer .footerText .footerRight {
     width: 25%;
+  }
+
+  #section .info{
+    height:800px;
   }
 
 }
 
 
 @media all and (max-width: 829px) {
-  #section .info #bottomFooter .infoPerson {
-    left: 50%;
-    transform: translateX(-50%);
-  }
 
   #section .info .infoText {
     display: none;
@@ -1706,18 +1697,16 @@ span {
     display: none;
   }
 
-
   #section .info .textCircle {
-    top: 0%;
-    left: 45%;
-    right: 0;
+    top: 50px;
+    left: 50%;
+    width: 480px;
     transform: translateX(-50%);
   }
-
   #section .info .textCircle>img {
-    /* width:100%; */
     width:500px;
   }
+
 
 }
 
@@ -1842,7 +1831,6 @@ span {
   }
 
 
-
   /* lip */
   #section .lip .lipLeft .lipText>h1 {
     font-size: 28pt;
@@ -1935,12 +1923,8 @@ span {
   /* footer */
 
   #section .info {
-    height: 780px;
+    height: 900px;
     margin-top: 50px;
-  }
-
-  #section .info #bottomFooter .infoPerson {
-    top: 0%;
   }
 
   #section .info #footer {
@@ -1969,6 +1953,21 @@ span {
 
   #section .info #footer .footerText .footerLeft .footerTablet {
     display: none;
+  }
+
+
+
+  #section .info #bottomFooter .infoPerson {
+    width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #section .info .textCircle {
+    top: 40px;
+    width: 480px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
 }
@@ -2033,22 +2032,6 @@ span {
 
   #section .butter .butterLeft .butterText>p {
     display: none;
-  }
-
-
-  #section .info .textCircle {
-    /* top: 3%; */
-    top: 0;
-    width: 480px;
-  }
-
-  #section .info .textCircle>img {
-    width: 100%;
-  }
-
-  #section .info .textCircle {
-    left: 50%;
-    transform: translateX(-50%);
   }
 
 }
