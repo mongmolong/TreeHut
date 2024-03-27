@@ -1,14 +1,14 @@
 $(document).ready(function () {
-  restoreHeaderState();
+//   restoreHeaderState();
 
-let delay = 300;
-let timer = null; 
-$(window).on('resize', function(){
-	clearTimeout(timer);
-	timer = setTimeout(function(){
-	document.location.reload();
-	}, delay);
-});
+// let delay = 300;
+// let timer = null; 
+// $(window).on('resize', function(){
+// 	clearTimeout(timer);
+// 	timer = setTimeout(function(){
+// 	document.location.reload();
+// 	}, delay);
+// });
 
 
 
