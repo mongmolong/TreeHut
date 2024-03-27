@@ -3,6 +3,6 @@ function clickme() {
 }
 
 
-const video = document.querySelector('mediaSub>video');
+const video = document.querySelector('mediaSub video');
 video.addEventListener('suspend',()=>{});
 video.addEventListener('play',()=>{});
