@@ -736,6 +736,7 @@ span {
   position: absolute;
   top: 0px;
   right: 0px;
+  cursor: pointer;
 
   transition: all 0.5s;
   backface-visibility: hidden;
