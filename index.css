@@ -1147,27 +1147,9 @@ span {
 
 
 @media all and (max-width: 1850px) {
-
-
-  /* ----------------media-------------------------------- */
-  #section .media {
-    /* height: 0;
-    padding-bottom: 56.25%; */
-  }
-
-  #section .media .mediaSub {
-    /* width: 100%; */
-  }
-
-  #section .media video {
-    /* width: 100%; */
-
-  }
-
   /* ----------------wash-------------------------------- */
   #section .wash {
     height: 850px;
-
     background-color: #ffffff;
   }
 
@@ -1180,7 +1162,6 @@ span {
   /* butter */
   #section .butter {
     height: 1000px;
-
   }
 
   #section .butter>p {
@@ -1190,15 +1171,12 @@ span {
 
   #section .butterItems {
     top: 170px;
-
-
   }
 
   /* lip */
   #section .lip {
     height: 950px;
-    overflow: hidden;
-    z-index: -1;
+    overflow: hidden;  
   }
 
   #section .lip .lipItems {
