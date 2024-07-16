@@ -38,7 +38,6 @@ span {
 #more {
   width: 180px;
   height: 40px;
-  /* background-color: rgba(0, 0, 255, 0.37); */
   display: flex;
   justify-content: space-between;
   margin-top: 40%;
@@ -552,7 +551,6 @@ span {
 #section .scrub .scrubItems>ul.scrubLists {
   width: 2370px;
   height: 390px;
-  /* margin-left: -386px; */
 }
 
 #section .scrub .scrubItems>ul.scrubLists>li {
@@ -562,7 +560,6 @@ span {
   cursor: pointer;
 }
 
-/* #section .scrub .scrubItems>ul>li>p { */
 #section .scrub .scrubItems>ul.scrubLists>li>p {
   width: 100%;
   height: 250px;
@@ -706,6 +703,7 @@ span {
   float: left;
   margin: 6px;
   border: 5px;
+
 }
 
 /* butterSubText */
@@ -736,10 +734,10 @@ span {
   position: absolute;
   top: 0px;
   right: 0px;
-  cursor: pointer;
 
   transition: all 0.5s;
   backface-visibility: hidden;
+  cursor: pointer;
 }
 
 #section .butterItems>li .front {
@@ -1148,17 +1146,16 @@ span {
 
 
 @media all and (max-width: 1850px) {
+
   /* ----------------wash-------------------------------- */
   #section .wash {
     height: 850px;
     background-color: #ffffff;
   }
 
-
   #section .scrub {
     height: 850px;
   }
-
 
   /* butter */
   #section .butter {
@@ -1175,9 +1172,11 @@ span {
   }
 
   /* lip */
+
   #section .lip {
     height: 950px;
-    overflow: hidden;  
+    overflow: hidden;
+    /* z-index: -1; */
   }
 
   #section .lip .lipItems {
@@ -1288,6 +1287,9 @@ span {
 
   #section .butter>p {
     width: 40%;
+  }
+  #section .butter .butterLeft .butterBtn {
+    display: none;
   }
 }
 
@@ -1470,7 +1472,6 @@ span {
     right: 0%;
     top: 35%;
   }
-
 }
 
 @media all and (min-width: 830px) and (max-width:1200px) {
@@ -1727,7 +1728,7 @@ span {
   #section .scrub .scrubItems {
     width: 1330px;
     left: 5%;
-    top: 40%;
+    top: 45%;
 
   }
 
