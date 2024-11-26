@@ -3,12 +3,12 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     checkScrollPosition();
+    toggleBottomButtonPosition();
   });
-
 
   function checkScrollPosition() {
     let scroll = $(window).scrollTop();
-    let topTop = $("#move01").offset().top;
+    let topTop = $("#move03").offset().top;
 
     if (scroll >= topTop) {
       $("#topBtn").fadeIn();
@@ -18,24 +18,25 @@ $(document).ready(function () {
       $(".bottom").removeClass("current");
     }
 
-    if (scroll >= topTop) {
-      $(".bottom").addClass("current");
-    }
-
     $(".bottom").css("top", 0);
   }
 
-  $(window).scroll(function () {
+  function toggleBottomButtonPosition() {
     let bottom = $("#move05").offset().top;
     let height = $(document).scrollTop();
-    if (height > bottom) {
-      $("#topBtn").stop().animate({ "bottom": "200px" });
-    }
-    else {
-      $("#topBtn").stop().animate({ "bottom": "100px" });
-    }
-  });
 
+    if (height > bottom) {
+      $("#topBtn").stop().animate({ "bottom": "240px" }, 300);  
+    } else {
+      $("#topBtn").stop().animate({ "bottom": "100px" }, 300);  
+    }
+  }
+
+  $("#topBtn").click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);  
+  });
 
   // ------------------------------------------------------------scrub
   let scrub_list = 0;
@@ -91,9 +92,10 @@ $(document).ready(function () {
 
   function scrubControl() {
     $(".scrubLists").stop().animate({ "margin-left": -scrub_width * scrub_list });
-    $(".scrubIndi>li").removeClass("s_indiOn");
-    $(".scrubIndi>li").eq(scrub_list).addClass("s_indiOn");
+    $(".scrubIndi>li").removeClass("scrub_indiOn");
+    $(".scrubIndi>li").eq(scrub_list).addClass("scrub_indiOn");
   }
+
   // ------------------------------------------------------------wash
   let washBig_list = 0;
   let washBig_count = $(".washPhotos>li").length;
